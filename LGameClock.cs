@@ -75,6 +75,7 @@ namespace LGameClock
             }
         }
 
+        // Source : https://github.com/Wampa842/MySummerMods/tree/master/TwentyFourClock //
         /// Based on the Sun's rotation, returns whether it's the afternoon.
         public bool IsAfternoon => (_rot.Value > 330.0f || _rot.Value <= 150.0f);
 
@@ -94,6 +95,7 @@ namespace LGameClock
         public int Hour24 => Mathf.FloorToInt(Hour24F);
         /// Minute in hour, 0 to 59 integer.
         public int Minute => Mathf.FloorToInt(MinuteF);
+        // End //
 
         public override void OnGUI()
         {
